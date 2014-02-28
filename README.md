@@ -16,4 +16,4 @@ A project that shows [getdns](http://github.com/getdnsapi/getdns) in iOS.
  - Describe build / automation of getdns.framework
  - Use iOS blocks for async API
  - Fix memory management
- 
+ - Add wrappers so extensions / options can be passed as normal data structures (NSDictionary, NSArray, etc.) 
