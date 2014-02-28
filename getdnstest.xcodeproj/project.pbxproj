@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1B2AC318C116E4007DD249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC218C116E4007DD249 /* Foundation.framework */; };
+		EF1B2AC518C116E4007DD249 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC418C116E4007DD249 /* CoreGraphics.framework */; };
+		EF1B2AC718C116E4007DD249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC618C116E4007DD249 /* UIKit.framework */; };
+		EF1B2ACD18C116E4007DD249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2ACB18C116E4007DD249 /* InfoPlist.strings */; };
+		EF1B2ACF18C116E4007DD249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ACE18C116E4007DD249 /* main.m */; };
+		EF1B2AD318C116E4007DD249 /* GDNSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AD218C116E4007DD249 /* GDNSAppDelegate.m */; };
+		EF1B2AD618C116E4007DD249 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AD418C116E4007DD249 /* Main_iPhone.storyboard */; };
+		EF1B2AD918C116E4007DD249 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AD718C116E4007DD249 /* Main_iPad.storyboard */; };
+		EF1B2ADC18C116E4007DD249 /* GDNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ADB18C116E4007DD249 /* GDNSViewController.m */; };
+		EF1B2ADE18C116E4007DD249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2ADD18C116E4007DD249 /* Images.xcassets */; };
+		EF1B2AE518C116E4007DD249 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AE418C116E4007DD249 /* XCTest.framework */; };
+		EF1B2AE618C116E4007DD249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC218C116E4007DD249 /* Foundation.framework */; };
+		EF1B2AE718C116E4007DD249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC618C116E4007DD249 /* UIKit.framework */; };
+		EF1B2AEF18C116E4007DD249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AED18C116E4007DD249 /* InfoPlist.strings */; };
+		EF1B2AF118C116E4007DD249 /* getdnstestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AF018C116E4007DD249 /* getdnstestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF1B2AE818C116E4007DD249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B2AB718C116E4007DD249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF1B2ABE18C116E4007DD249;
+			remoteInfo = getdnstest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF1B2ABF18C116E4007DD249 /* getdnstest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getdnstest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1B2AC218C116E4007DD249 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF1B2AC418C116E4007DD249 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF1B2AC618C116E4007DD249 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF1B2ACA18C116E4007DD249 /* getdnstest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "getdnstest-Info.plist"; sourceTree = "<group>"; };
+		EF1B2ACC18C116E4007DD249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1B2ACE18C116E4007DD249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF1B2AD018C116E4007DD249 /* getdnstest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "getdnstest-Prefix.pch"; sourceTree = "<group>"; };
+		EF1B2AD118C116E4007DD249 /* GDNSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDNSAppDelegate.h; sourceTree = "<group>"; };
+		EF1B2AD218C116E4007DD249 /* GDNSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDNSAppDelegate.m; sourceTree = "<group>"; };
+		EF1B2AD518C116E4007DD249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EF1B2AD818C116E4007DD249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EF1B2ADA18C116E4007DD249 /* GDNSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDNSViewController.h; sourceTree = "<group>"; };
+		EF1B2ADB18C116E4007DD249 /* GDNSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDNSViewController.m; sourceTree = "<group>"; };
+		EF1B2ADD18C116E4007DD249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF1B2AE318C116E4007DD249 /* getdnstestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getdnstestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1B2AE418C116E4007DD249 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF1B2AEC18C116E4007DD249 /* getdnstestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "getdnstestTests-Info.plist"; sourceTree = "<group>"; };
+		EF1B2AEE18C116E4007DD249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1B2AF018C116E4007DD249 /* getdnstestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getdnstestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1B2ABC18C116E4007DD249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AC518C116E4007DD249 /* CoreGraphics.framework in Frameworks */,
+				EF1B2AC718C116E4007DD249 /* UIKit.framework in Frameworks */,
+				EF1B2AC318C116E4007DD249 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1B2AE018C116E4007DD249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AE518C116E4007DD249 /* XCTest.framework in Frameworks */,
+				EF1B2AE718C116E4007DD249 /* UIKit.framework in Frameworks */,
+				EF1B2AE618C116E4007DD249 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1B2AB618C116E4007DD249 = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AC818C116E4007DD249 /* getdnstest */,
+				EF1B2AEA18C116E4007DD249 /* getdnstestTests */,
+				EF1B2AC118C116E4007DD249 /* Frameworks */,
+				EF1B2AC018C116E4007DD249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1B2AC018C116E4007DD249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2ABF18C116E4007DD249 /* getdnstest.app */,
+				EF1B2AE318C116E4007DD249 /* getdnstestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1B2AC118C116E4007DD249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AC218C116E4007DD249 /* Foundation.framework */,
+				EF1B2AC418C116E4007DD249 /* CoreGraphics.framework */,
+				EF1B2AC618C116E4007DD249 /* UIKit.framework */,
+				EF1B2AE418C116E4007DD249 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1B2AC818C116E4007DD249 /* getdnstest */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AD118C116E4007DD249 /* GDNSAppDelegate.h */,
+				EF1B2AD218C116E4007DD249 /* GDNSAppDelegate.m */,
+				EF1B2AD418C116E4007DD249 /* Main_iPhone.storyboard */,
+				EF1B2AD718C116E4007DD249 /* Main_iPad.storyboard */,
+				EF1B2ADA18C116E4007DD249 /* GDNSViewController.h */,
+				EF1B2ADB18C116E4007DD249 /* GDNSViewController.m */,
+				EF1B2ADD18C116E4007DD249 /* Images.xcassets */,
+				EF1B2AC918C116E4007DD249 /* Supporting Files */,
+			);
+			path = getdnstest;
+			sourceTree = "<group>";
+		};
+		EF1B2AC918C116E4007DD249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2ACA18C116E4007DD249 /* getdnstest-Info.plist */,
+				EF1B2ACB18C116E4007DD249 /* InfoPlist.strings */,
+				EF1B2ACE18C116E4007DD249 /* main.m */,
+				EF1B2AD018C116E4007DD249 /* getdnstest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF1B2AEA18C116E4007DD249 /* getdnstestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AF018C116E4007DD249 /* getdnstestTests.m */,
+				EF1B2AEB18C116E4007DD249 /* Supporting Files */,
+			);
+			path = getdnstestTests;
+			sourceTree = "<group>";
+		};
+		EF1B2AEB18C116E4007DD249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AEC18C116E4007DD249 /* getdnstestTests-Info.plist */,
+				EF1B2AED18C116E4007DD249 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1B2ABE18C116E4007DD249 /* getdnstest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1B2AF418C116E4007DD249 /* Build configuration list for PBXNativeTarget "getdnstest" */;
+			buildPhases = (
+				EF1B2ABB18C116E4007DD249 /* Sources */,
+				EF1B2ABC18C116E4007DD249 /* Frameworks */,
+				EF1B2ABD18C116E4007DD249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = getdnstest;
+			productName = getdnstest;
+			productReference = EF1B2ABF18C116E4007DD249 /* getdnstest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF1B2AE218C116E4007DD249 /* getdnstestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1B2AF718C116E4007DD249 /* Build configuration list for PBXNativeTarget "getdnstestTests" */;
+			buildPhases = (
+				EF1B2ADF18C116E4007DD249 /* Sources */,
+				EF1B2AE018C116E4007DD249 /* Frameworks */,
+				EF1B2AE118C116E4007DD249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1B2AE918C116E4007DD249 /* PBXTargetDependency */,
+			);
+			name = getdnstestTests;
+			productName = getdnstestTests;
+			productReference = EF1B2AE318C116E4007DD249 /* getdnstestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1B2AB718C116E4007DD249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GDNS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Goyal, Neel";
+				TargetAttributes = {
+					EF1B2AE218C116E4007DD249 = {
+						TestTargetID = EF1B2ABE18C116E4007DD249;
+					};
+				};
+			};
+			buildConfigurationList = EF1B2ABA18C116E4007DD249 /* Build configuration list for PBXProject "getdnstest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF1B2AB618C116E4007DD249;
+			productRefGroup = EF1B2AC018C116E4007DD249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1B2ABE18C116E4007DD249 /* getdnstest */,
+				EF1B2AE218C116E4007DD249 /* getdnstestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1B2ABD18C116E4007DD249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AD918C116E4007DD249 /* Main_iPad.storyboard in Resources */,
+				EF1B2ADE18C116E4007DD249 /* Images.xcassets in Resources */,
+				EF1B2AD618C116E4007DD249 /* Main_iPhone.storyboard in Resources */,
+				EF1B2ACD18C116E4007DD249 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1B2AE118C116E4007DD249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AEF18C116E4007DD249 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1B2ABB18C116E4007DD249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AD318C116E4007DD249 /* GDNSAppDelegate.m in Sources */,
+				EF1B2ACF18C116E4007DD249 /* main.m in Sources */,
+				EF1B2ADC18C116E4007DD249 /* GDNSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1B2ADF18C116E4007DD249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B2AF118C116E4007DD249 /* getdnstestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF1B2AE918C116E4007DD249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF1B2ABE18C116E4007DD249 /* getdnstest */;
+			targetProxy = EF1B2AE818C116E4007DD249 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF1B2ACB18C116E4007DD249 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B2ACC18C116E4007DD249 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF1B2AD418C116E4007DD249 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B2AD518C116E4007DD249 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1B2AD718C116E4007DD249 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B2AD818C116E4007DD249 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1B2AED18C116E4007DD249 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B2AEE18C116E4007DD249 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1B2AF218C116E4007DD249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF1B2AF318C116E4007DD249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1B2AF518C116E4007DD249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
+				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF1B2AF618C116E4007DD249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
+				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF1B2AF818C116E4007DD249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/getdnstest.app/getdnstest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "getdnstestTests/getdnstestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF1B2AF918C116E4007DD249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/getdnstest.app/getdnstest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
+				INFOPLIST_FILE = "getdnstestTests/getdnstestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1B2ABA18C116E4007DD249 /* Build configuration list for PBXProject "getdnstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B2AF218C116E4007DD249 /* Debug */,
+				EF1B2AF318C116E4007DD249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1B2AF418C116E4007DD249 /* Build configuration list for PBXNativeTarget "getdnstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B2AF518C116E4007DD249 /* Debug */,
+				EF1B2AF618C116E4007DD249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF1B2AF718C116E4007DD249 /* Build configuration list for PBXNativeTarget "getdnstestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B2AF818C116E4007DD249 /* Debug */,
+				EF1B2AF918C116E4007DD249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1B2AB718C116E4007DD249 /* Project object */;
+}
