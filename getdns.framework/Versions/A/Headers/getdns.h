@@ -44,7 +44,7 @@
 extern "C" {
 #endif
 
-#define GETDNS_COMPILATION_COMMENT "getdns 0.1.0 configured on Fri Feb 28 13:48:19 EST 2014 for the February 2014 version of the API"
+#define GETDNS_COMPILATION_COMMENT "getdns 0.1.0 configured on Fri Feb 28 18:40:13 EST 2014 for the February 2014 version of the API"
 
 /* Return values */
 typedef enum getdns_return_t {

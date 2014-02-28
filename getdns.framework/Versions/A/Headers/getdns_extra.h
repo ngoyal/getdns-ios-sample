@@ -28,6 +28,9 @@
 #ifndef _GETDNS_EXTRA_H_
 #define _GETDNS_EXTRA_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include <getdns/getdns.h>
 #include <sys/time.h>
 
@@ -115,5 +118,7 @@ getdns_context_get_extension_data(struct getdns_context* context);
 getdns_return_t
 getdns_extension_detach_eventloop(struct getdns_context* context);
 
-
+#ifdef __cplusplus
+}
+#endif
 #endif

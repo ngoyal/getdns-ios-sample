@@ -10,6 +10,7 @@
 #import <CFNetwork/CFNetwork.h>
 #import <getdns/getdns.h>
 #import <getdns/getdns_extra.h>
+#import <string.h>
 
 @implementation GDNSContext
 
@@ -69,7 +70,7 @@ getdns_nsrunloop_schedule_timeout(struct getdns_context* context,
                                  void* eventloop_data, uint16_t timeout,
                                  getdns_timeout_data_t* timeout_data,
                                  void** eventloop_timer) {
-    
+    NSLog(@"%d", (int) timeout);
     return GETDNS_RETURN_GOOD;
 }
 
@@ -107,7 +108,7 @@ static getdns_return_t set_event_loop(getdns_context* ctx, GDNSContext* gctx) {
 -(id) init {
     self = [super init];
     if (self) {
-        getdns_context_create(&ctx_, 1);
+        getdns_context_create(&ctx_, 0);
         set_event_loop(ctx_, self);
     }
     return self;

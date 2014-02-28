@@ -24,8 +24,8 @@
 		EF1B2AF118C116E4007DD249 /* getdnstestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AF018C116E4007DD249 /* getdnstestTests.m */; };
 		EF1B2AFF18C124A6007DD249 /* simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AFE18C124A6007DD249 /* simulator.m */; };
 		EF1B2B0218C126C3007DD249 /* GDNSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2B0118C126C3007DD249 /* GDNSContext.m */; };
-		EF1B2B0818C12A65007DD249 /* getdns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2B0718C12A65007DD249 /* getdns.framework */; };
 		EF1B2B0A18C131AE007DD249 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2B0918C131AE007DD249 /* CFNetwork.framework */; };
+		EF8D30D518C1569500CC0AF7 /* getdns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8D30D418C1569500CC0AF7 /* getdns.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,9 @@
 		EF1B2AFE18C124A6007DD249 /* simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulator.m; sourceTree = "<group>"; };
 		EF1B2B0018C126C3007DD249 /* GDNSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDNSContext.h; sourceTree = "<group>"; };
 		EF1B2B0118C126C3007DD249 /* GDNSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDNSContext.m; sourceTree = "<group>"; };
-		EF1B2B0718C12A65007DD249 /* getdns.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = getdns.framework; sourceTree = "<group>"; };
 		EF1B2B0918C131AE007DD249 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EF8D30D018C1439300CC0AF7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EF8D30D418C1569500CC0AF7 /* getdns.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = getdns.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8D30D518C1569500CC0AF7 /* getdns.framework in Frameworks */,
 				EF1B2B0A18C131AE007DD249 /* CFNetwork.framework in Frameworks */,
 				EF1B2AC518C116E4007DD249 /* CoreGraphics.framework in Frameworks */,
-				EF1B2B0818C12A65007DD249 /* getdns.framework in Frameworks */,
 				EF1B2AC718C116E4007DD249 /* UIKit.framework in Frameworks */,
 				EF1B2AC318C116E4007DD249 /* Foundation.framework in Frameworks */,
 			);
@@ -114,8 +115,9 @@
 		EF1B2AC118C116E4007DD249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF8D30D418C1569500CC0AF7 /* getdns.framework */,
+				EF8D30D018C1439300CC0AF7 /* CoreFoundation.framework */,
 				EF1B2B0918C131AE007DD249 /* CFNetwork.framework */,
-				EF1B2B0718C12A65007DD249 /* getdns.framework */,
 				EF1B2AC218C116E4007DD249 /* Foundation.framework */,
 				EF1B2AC418C116E4007DD249 /* CoreGraphics.framework */,
 				EF1B2AC618C116E4007DD249 /* UIKit.framework */,
@@ -336,7 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -349,8 +351,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neel Goyal (87YAQ47VZ5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -366,7 +370,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s";
@@ -377,7 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -390,8 +394,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neel Goyal (87YAQ47VZ5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -401,6 +407,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -413,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neel Goyal (87YAQ47VZ5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ngoyal/projects/other/getdnstest,
@@ -420,6 +428,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
 				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-liconv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neel Goyal (87YAQ47VZ5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ngoyal/projects/other/getdnstest,
@@ -439,7 +452,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
 				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-liconv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -507,6 +525,7 @@
 				EF1B2AF618C116E4007DD249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF1B2AF718C116E4007DD249 /* Build configuration list for PBXNativeTarget "getdnstestTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +534,7 @@
 				EF1B2AF918C116E4007DD249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
