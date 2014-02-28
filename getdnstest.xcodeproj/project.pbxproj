@@ -22,6 +22,10 @@
 		EF1B2AE718C116E4007DD249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2AC618C116E4007DD249 /* UIKit.framework */; };
 		EF1B2AEF18C116E4007DD249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AED18C116E4007DD249 /* InfoPlist.strings */; };
 		EF1B2AF118C116E4007DD249 /* getdnstestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AF018C116E4007DD249 /* getdnstestTests.m */; };
+		EF1B2AFF18C124A6007DD249 /* simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AFE18C124A6007DD249 /* simulator.m */; };
+		EF1B2B0218C126C3007DD249 /* GDNSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2B0118C126C3007DD249 /* GDNSContext.m */; };
+		EF1B2B0818C12A65007DD249 /* getdns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2B0718C12A65007DD249 /* getdns.framework */; };
+		EF1B2B0A18C131AE007DD249 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B2B0918C131AE007DD249 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		EF1B2AEC18C116E4007DD249 /* getdnstestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "getdnstestTests-Info.plist"; sourceTree = "<group>"; };
 		EF1B2AEE18C116E4007DD249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF1B2AF018C116E4007DD249 /* getdnstestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getdnstestTests.m; sourceTree = "<group>"; };
+		EF1B2AFE18C124A6007DD249 /* simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulator.m; sourceTree = "<group>"; };
+		EF1B2B0018C126C3007DD249 /* GDNSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDNSContext.h; sourceTree = "<group>"; };
+		EF1B2B0118C126C3007DD249 /* GDNSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDNSContext.m; sourceTree = "<group>"; };
+		EF1B2B0718C12A65007DD249 /* getdns.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = getdns.framework; sourceTree = "<group>"; };
+		EF1B2B0918C131AE007DD249 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1B2B0A18C131AE007DD249 /* CFNetwork.framework in Frameworks */,
 				EF1B2AC518C116E4007DD249 /* CoreGraphics.framework in Frameworks */,
+				EF1B2B0818C12A65007DD249 /* getdns.framework in Frameworks */,
 				EF1B2AC718C116E4007DD249 /* UIKit.framework in Frameworks */,
 				EF1B2AC318C116E4007DD249 /* Foundation.framework in Frameworks */,
 			);
@@ -103,6 +114,8 @@
 		EF1B2AC118C116E4007DD249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF1B2B0918C131AE007DD249 /* CFNetwork.framework */,
+				EF1B2B0718C12A65007DD249 /* getdns.framework */,
 				EF1B2AC218C116E4007DD249 /* Foundation.framework */,
 				EF1B2AC418C116E4007DD249 /* CoreGraphics.framework */,
 				EF1B2AC618C116E4007DD249 /* UIKit.framework */,
@@ -122,6 +135,9 @@
 				EF1B2ADB18C116E4007DD249 /* GDNSViewController.m */,
 				EF1B2ADD18C116E4007DD249 /* Images.xcassets */,
 				EF1B2AC918C116E4007DD249 /* Supporting Files */,
+				EF1B2AFE18C124A6007DD249 /* simulator.m */,
+				EF1B2B0018C126C3007DD249 /* GDNSContext.h */,
+				EF1B2B0118C126C3007DD249 /* GDNSContext.m */,
 			);
 			path = getdnstest;
 			sourceTree = "<group>";
@@ -254,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1B2B0218C126C3007DD249 /* GDNSContext.m in Sources */,
 				EF1B2AD318C116E4007DD249 /* GDNSAppDelegate.m in Sources */,
 				EF1B2ACF18C116E4007DD249 /* main.m in Sources */,
+				EF1B2AFF18C124A6007DD249 /* simulator.m in Sources */,
 				EF1B2ADC18C116E4007DD249 /* GDNSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +335,7 @@
 		EF1B2AF218C116E4007DD249 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -351,13 +369,14 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
 		EF1B2AF318C116E4007DD249 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -385,6 +404,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -393,9 +413,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ngoyal/projects/other/getdnstest,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
 				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-liconv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,9 +432,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ngoyal/projects/other/getdnstest,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "getdnstest/getdnstest-Prefix.pch";
 				INFOPLIST_FILE = "getdnstest/getdnstest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-liconv";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
